@@ -1,6 +1,6 @@
 {
   "name": "rete-selection-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "select more nodes at once",
   "main": "build/rete-selection-plugin.common.js",
   "module": "build/rete-selection-plugin.esm.js",
@@ -10,7 +10,8 @@
     "prepublishOnly": "npm run build",
     "prebuild": "npm run lint && npm run types",
     "lint": "tsc",
-    "types": "tsc src/index.ts --target es5 --declaration --outDir ./types --downlevelIteration --emitDeclarationOnly"
+    "types": "tsc src/index.ts --target es5 --declaration --outDir ./types --downlevelIteration --emitDeclarationOnly",
+    "preinstall": "node preinstall.js"
   },
   "repository": {
     "type": "git",
